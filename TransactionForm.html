@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <base target="_top">
+
+  <style>
+
+    body{
+
+      font-family:Arial,sans-serif;
+      padding:20px;
+
+    }
+
+    h2{
+
+      margin-top:0;
+
+    }
+
+    label{
+
+      display:block;
+      margin-top:15px;
+      font-weight:bold;
+
+    }
+
+    select,input{
+
+      width:100%;
+      padding:8px;
+      margin-top:5px;
+      box-sizing:border-box;
+
+    }
+
+    button{
+
+      width:100%;
+      margin-top:25px;
+      padding:10px;
+
+      border:none;
+      border-radius:6px;
+
+      background:#2E7D32;
+      color:white;
+
+      font-size:15px;
+      cursor:pointer;
+
+    }
+
+    button:hover{
+
+      background:#256628;
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<h2>Add Transaction</h2>
+
+<label>Product</label>
+
+<select id="product">
+
+<? for(let product of products){ ?>
+
+<option><?= product ?></option>
+
+<? } ?>
+
+</select>
+
+<label>Type</label>
+
+<select id="type">
+
+<option>In</option>
+<option>Out</option>
+
+</select>
+
+<label>Quantity</label>
+
+<input
+type="number"
+id="qty"
+min="1"
+value="1">
+
+<button onclick="saveTransaction()">
+
+Save Transaction
+
+</button>
+
+<script>
+
+function saveTransaction(){
+
+  const data={
+
+    product:document.getElementById("product").value,
+    type:document.getElementById("type").value,
+    qty:Number(document.getElementById("qty").value)
+
+  };
+
+  google.script.run
+
+    .withSuccessHandler(function(message){
+
+      alert(message);
+
+      google.script.host.close();
+
+    })
+
+    .withFailureHandler(function(err){
+
+      alert(err.message);
+
+    })
+
+    .saveTransaction(data);
+
+}
+
+</script>
+
+</body>
+
+</html>
