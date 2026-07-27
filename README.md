@@ -1,9 +1,5 @@
 # 📦 SmartStock
-![Google Sheets](https://img.shields.io/badge/Google%20Sheets-34A853?logo=googlesheets&logoColor=white)
-
-![Apps Script](https://img.shields.io/badge/Apps%20Script-4285F4?logo=google&logoColor=white)
-
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![Google Sheets](https://img.shields.io/badge/Google%20Sheets-34A853?logo=googlesheets&logoColor=white) ![Apps Script](https://img.shields.io/badge/Apps%20Script-4285F4?logo=google&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 
 > Inventory Dashboard for Small Businesses built with **Google Sheets** and **Google Apps Script**.
 
