@@ -113,6 +113,15 @@ Dashboard
 - Current Stock
 
 ---
+## 📂 Files
+
+| File | Description |
+|------|-------------|
+| SmartStock.xlsx | Spreadsheet template |
+| Code.gs | Google Apps Script backend |
+| TransactionForm.html | Transaction modal |
+
+---
 
 # 📌 Future Improvements
 
