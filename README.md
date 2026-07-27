@@ -20,21 +20,13 @@ SmartStock is a lightweight inventory management system that helps small busines
 
 ## 📸 Preview
 
-> *(Insert dashboard screenshot here)*
-
 ![Dashboard](assets/dashboard.png)
 
 ---
 
 ## 🎥 Demo
 
-> *(Insert demo GIF or YouTube link here)*
-
 ![Demo](assets/demo.gif)
-
-or
-
-https://youtu.be/your-video-link
 
 ---
 
